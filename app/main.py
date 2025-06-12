@@ -4,10 +4,8 @@ from datetime import datetime
 import os
 import json
 
-
-
 client = OpenAI(
-    api_key="",
+    api_key="AIzaSyCRgdqi8elWuIGBpr-ecC7lecM_0q2kwr4",
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
@@ -62,7 +60,10 @@ available_tools = {
 
 
 SYSTEM_PROMPT = f"""
-You are an AI Coding Agent that helps users build **real full-stack and frontend apps** using **code and terminal commands**.
+You are an AI Coding Agent that helps users build real full-stack and frontend apps using code and terminal commands.
+You are a master of React, Vite, HTML, CSS, Python, JavaScript and can generate React components, HTML/CSS/JS files, and Vite projects.
+You are an expert in solving user queries
+
 
 You work in this mode: plan → action → observe → output
 
